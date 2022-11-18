@@ -1,0 +1,150 @@
+@use "components";
+
+
+body {
+    background-color: #212529;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.boton {
+    color: components.$color-boton;
+    border-radius: .5rem;
+    border: solid 1px components.$color-boton;
+    padding: .15rem;
+    font-weight: 600;
+    background-color: transparent;
+    transition: 1s;
+    &:hover {
+        color: #000;
+        background-color: components.$color-boton;
+    }
+}
+.boton-2 {
+    margin-left: .25rem;
+    color: components.$color-boton;
+    border-radius: .5rem;
+    border: solid 1px components.$color-boton;
+    padding: .15rem 1rem;
+    font-weight: 600;
+    background-color: transparent;
+    transition: 1s;
+    &:hover {
+        color: #000;
+        background-color: components.$color-boton;
+    }
+}
+
+.texto {
+    color: components.$color-text;
+}
+
+.nav {
+    top: 0;
+    position: fixed;
+    background-color: #030404;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    height: 4rem;
+    border-bottom: solid 1px #232424;
+}
+
+.logo img {
+    max-width: 10rem;
+}
+
+.sobre-mi {
+    padding-top: 5rem;
+    flex: 1;
+    display: flex;
+    margin: 7rem 2.5rem 13rem 2.5rem;
+    //margin: 7rem 25% 13rem 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades {
+    flex: 1;
+    display: flex;
+    margin: 7rem 2.5rem 13rem 2.5rem;
+   //margin: 2.5rem 25% 0 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+@media (max-width: 920px){
+    .proyectos {
+        .pro {
+            .pro-2 {
+                .card {
+                    width: 28rem;
+                    left: 20%;
+                    right: 25%;
+                }
+            }
+        }
+    }
+    .habilidades {
+        .habi {
+            max-width: 30rem;
+        }
+    }
+}
+
+@media (max-width: 426px){
+    .nav {
+        max-width: 425px;
+        .menu {
+            display: none;
+        }
+        .contac {
+            //font-size: 1.5rem;
+            a {
+                margin: 1rem;
+            }
+        }
+    }
+    .proyectos {
+        .pro {
+            .pro-2 {
+                .card {
+                    display: block;
+                    max-width: 400px;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+    .sobre-mi{
+        margin: 7rem 1.5rem 13rem 1.5rem;
+    }
+    .habilidades {
+        margin: 7rem 1.5rem 13rem 1.5rem;
+    }
+}
+
+@media (max-width: 321px) {
+    .proyectos {
+        .pro {
+            .pro-2 {
+                .card {
+                    display: block;
+                    max-width: 300px;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

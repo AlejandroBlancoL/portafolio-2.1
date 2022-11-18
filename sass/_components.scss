@@ -1,0 +1,141 @@
+$color-text: #e0e2e3;
+$color-boton: #fbd15b;
+
+@mixin imagen-G {
+    margin-right: 2.5rem;
+    max-width: 25rem;
+    max-height: 60rem;
+}
+
+
+.menu {
+    margin-bottom: 0;
+    li {
+       display: inline;
+       margin-right: 2rem;
+       list-style: none;
+       font-size: 1.1rem;
+
+       a {
+        color: $color-text;
+        text-decoration: none;
+        border: solid 1px #030404;
+
+        &:hover {
+            text-decoration: underline;
+            background-color: #232424;
+            border: solid 1px #232424;
+        }
+       }
+    }
+}
+
+.imagen {
+    .img {
+        margin-right: 2.5rem;
+        max-width: 25rem;
+        max-height: 60rem;
+    }
+}
+
+.presentacion {
+    text-align: justify;
+    max-width: 35rem;
+    color: $color-text;
+    .titulo {
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: $color-boton;
+    }
+    .texto {
+        font-size: 1.5rem;
+    }
+}
+
+.imagen-2 {
+    img {
+        @include imagen-G();
+        margin-left: 3rem;
+    }
+}
+
+.habilidades {
+    .habi {
+        padding-top: 5rem;
+        display: flex;
+    text-align: justify;
+    max-width: 65rem;
+    color: $color-text;
+    .titulo {
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: $color-boton;
+    }
+    .texto {
+        font-size: 1.5rem;
+    }
+    }
+}
+
+.proyectos {
+    .pro {
+        .titulo {
+            text-align: center;
+            font-weight: 600;
+            font-size: 4rem;
+            color: $color-boton;
+            margin: 0 0 2rem 0;
+        }
+        .carta-1 {
+            background-color: #212529;
+            border: solid 2px #030404;
+            color: #ddd;
+            margin: 1rem;
+            text-align: justify;
+            margin-bottom: 2rem;
+            width: 30rem;
+            a {
+                background-color: $color-boton;
+                color: #030404;
+                border: solid 1px #030404;
+                &:hover {
+                    background-color: #c7b15b;
+                }
+            }
+        }
+        .carta-2 {
+            background-color: #212529;
+            border: solid 2px #030404;
+            color: #ddd;
+            margin: 1rem;
+            text-align: justify;
+            margin-bottom: 2rem;
+            width: 30rem;
+            a {
+                background-color: $color-boton;
+                color: #030404;
+                border: solid 1px #030404;
+                &:hover {
+                    background-color: #c7b15b;
+                }
+            }
+        }
+    }
+}
+
+// .footer {
+//     padding-top: 8rem;
+//     align-items: center;
+//     text-align: center;
+//     font-size: 8rem;
+//     .redes {
+//         i {
+//             color: $color-boton;
+//             transition: 1s;
+//             &:hover {
+//                 color: #ecd081;
+//             }
+//         }
+//     }
+// }
+
